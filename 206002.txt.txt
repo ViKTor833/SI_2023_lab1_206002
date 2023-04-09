@@ -1,0 +1,50 @@
+
+4.По влегувањето во директориумот SI_2023_lab1_206002 го иницијализирав со git со помош на наредбата git init.
+
+5.За поврзување со репозиториумот на github ја искористив наредбата git remote add origin https://github.com/ViKTor833/SI_2023_lab1_206002.git
+
+6. Со помош на наредбата echo >> README.md ја креирам README.md датотеката. Потоа со git add README.md ја додавам датотеката на сцена. А потоа со git commit -m "Initial commit" го направив првиот комит.
+
+7.Со помош на наредбата echo >> SILab1.java креирав нов фајл во кој потоа ја ископирав дадената содржина. Потоа со наредбата git add SILab1.java го додадов фајлот на сцена и со наредбата git commit -m "Add java class" направив втор комит.
+
+8. Со наредбата git push -u origin master се синхоринизирам со оддалечениот репозиториум односно оваа наредба ги додава на оддалечениот репозиториум сите комити кој јас ги имам направено а ги нема таму.
+
+9. Со наредбите git branch bug1, git branch bug2 и git branch bug3 отворив 3 нови гранки.
+
+10. Со наредбата git checkout bug1 се префрлив на гранката bug1.
+
+11.Откако ја поправив грешката, со наредбата git add SILab1.java го додадов модифицираниот фајл на сцена и потоа со git commit -m "Fix wrong loop for reading" направив нов комит на bug1 гранката.
+
+12. Со наредбата git checkout bug2 се префрлив на гранката bug2.
+
+13.По поправката на грешката, со наредбата git add SILab1.java го додадов фајлот на сцена и потоа со наредбата git commit -m "Fix wrong condition in filterOddNumbers" направив нов комит на гранката bug2.
+
+14.Со наредбата git checkout bug3 се префрлив на bug3 гранката.
+
+15.Откако ја поправив грешката во методот sumEvenNumbers, со наредбата git add SILab1.java го додадов модифицираниот фајл на сцена и со git commit -m "Fix method sumEvenNumbers" направив нов комит на bug3.
+
+16.Најпрво се префрлив на гранката bug1 со наредбата git checkout bug1, а потоа со наредбата git push -u origin bug1 ги прикачив комитите од мојата локална гранка bug1 на оддалечената гранка bug1. Истото го направив и со другите 2 гранки. Најпрво се префрлив на нив со git checkout bug2 и git checkout bug3 соодветно и потоа со git push -u origin bug2 и git push -u origin bug3 соодветно се синхорнизирав со оддалечениот репозиториум.
+
+17. Со наредбата git checkout master се префрлив на master гранката.
+
+18.Со наредбата git merge bug1 ја споив гранката bug1 со гранката master. Спојувањето се извршувасе по стратегија fast-forward бидејќи master немаше нови комити односно после заедничнкиот комит кој го имаат master и bug1 на гранката bug1 имаше само 1 нов комит и тој без никаков проблем се приспои кон master.
+
+19. Со наредбата git push -u origin master се синхронизираат локалниот и оддалечениот master. Поради тоа што немаше никакви промени на другите гранки и по извршување на наредбите git push -u origin bug1, git push -u origin bug2, git push -u origin bug3 добив дека локалните гранки веќе се во тек со оддалечените гранки.
+
+20. Со наредбата git merge bug2 ја споив гранката bug2 кон master. При спојувањето немаше конфликти и тоа беше направено по "ort" стратегија.
+
+21. Со наредбата git push -u origin master ја синхронизирав гранката master со оддалечената гранка master.
+
+22. Со наредбата git checkout bug3 се префрлив на bug3.
+
+23. Со наредбата git rebase master направив rebase кон master. Односно комитот на bug3 се стави во temp зона и сите комити кои беа на master а ги немаше на bug3 се префрлија на bug3 а потоа и комитите од temp зоната се ставија врз тие што беа префрлени.
+
+24. Со git checkout master се префрлив на master.
+
+25. Со git merge bug3 ја споив bug3 кон master и спојувањето беше то fast-forward стратегија.
+
+26.Со наредбите git push -u origin master, git push -u origin bug1, git push -u origin bug2 и git push -u origin bug3 --force ги синхроизирав локалните со оддалечените гранки.
+
+27. Откако ги додадов logs.txt и 206002.txt со наредбата git add logs.txt и git add 206002.txt ги додадов на сцена и потоа со git commit -m "Final commit" крерав нов комит.
+
+
